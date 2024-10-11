@@ -71,8 +71,8 @@ object RemoteUtil {
     }
 
     interface Api {
-        @GET("contents_{langKey}")
-        suspend fun getContents(@Path("langKey") langKey: String): Response<List<ApiResponse>>
+       // @GET("contents_{langKey}")
+        //suspend fun getContents(@Path("langKey") langKey: String): Response<ApiResponse<>>
     }
 
 }

@@ -1,11 +1,7 @@
 package com.kozan.utils
 
-import androidx.room.TypeConverter
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
-import com.python.coding.education.model.Answer
 
-
+/*
 object TypeConverters {
 
 
@@ -47,4 +43,4 @@ object TypeConverters {
 
 
 
-}
+}*/

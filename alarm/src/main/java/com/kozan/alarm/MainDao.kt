@@ -24,7 +24,7 @@ interface MainDao {
 
 
   @Query("DELETE FROM alarms WHERE time=:alarmTime and id= :alarmId")
-  suspend fun delete(alarmId:Int,alarmTime: Long)
+  suspend fun delete(alarmId:Int,alarmTime: Long):Int
 
 
 //    @Delete

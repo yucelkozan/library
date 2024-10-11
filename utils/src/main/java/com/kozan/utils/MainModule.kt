@@ -1,20 +1,7 @@
 package com.kozan.utils
 
-import android.content.Context
-import androidx.room.Room
-import androidx.room.migration.Migration
-import androidx.sqlite.db.SupportSQLiteDatabase
-import com.python.coding.education.db.AppDatabase
-import com.python.coding.education.utils.JsonHelper
-import com.python.coding.education.utils.PreferenceHelper
-import dagger.Module
-import dagger.Provides
-import dagger.hilt.InstallIn
-import dagger.hilt.android.qualifiers.ApplicationContext
-import dagger.hilt.components.SingletonComponent
-import javax.inject.Singleton
 
-
+/*
 @Module
 @InstallIn(SingletonComponent::class)
 object MainModule {
@@ -73,4 +60,4 @@ object MainModule {
     fun getJsonHelper(@ApplicationContext app: Context) = JsonHelper(app)
 
 
-}
+}*/

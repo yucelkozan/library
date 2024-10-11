@@ -1,16 +1,17 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
     id 'maven-publish'
 }
 
 android {
     namespace 'com.kozan.utils'
-    compileSdk 33
+    compileSdk 35
 
     defaultConfig {
         minSdk 21
-        targetSdk 33
+        targetSdk 35
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -32,6 +33,10 @@ android {
 
     buildFeatures{
         dataBinding true
+    }
+
+    publishing {
+        singleVariant("release")
     }
 }
 
@@ -64,7 +69,7 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.yucelkozan.library'
+                groupId = 'com.kozan.library'
                 artifactId = 'utils'
                 version = '1.0'
             }

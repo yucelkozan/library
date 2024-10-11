@@ -1,5 +1,6 @@
-package com.kozan.utils
 
+package com.kozan.utils
+/*
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
@@ -24,13 +25,15 @@ fun Activity.startAnotherActivityWithAnim(activityClass: Class<*>){
 
 
 
+*/
 /**
  * intArrayOf(
  * Color.parseColor("#E8F8F8"),
  * Color.parseColor("#64E3E3"),
  * Color.parseColor("#E064E3"))
  *
- */
+ *//*
+
 fun TextView.paintTextView(colorIntArray: IntArray) {
     val paint = this.paint
     val width = paint.measureText(this.text.toString())
@@ -65,4 +68,4 @@ fun ComponentActivity.makeFullScreen() {
 fun Context.openBrowse(link: String) {
     val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(link))
     this.startActivity(browserIntent)
-}
+}*/

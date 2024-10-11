@@ -24,6 +24,7 @@ import androidx.navigation.ui.setupWithNavController
 
 import java.util.Calendar
 
+/*
 object AppUtils {
 
 
@@ -49,11 +50,13 @@ object AppUtils {
         addLocationRadarMarkers(currentLocation)
     }
 
-   /* <style name="QzCustomDialog" parent="Theme.MaterialComponents.Light.Dialog">
+   */
+/* <style name="QzCustomDialog" parent="Theme.MaterialComponents.Light.Dialog">
     <item name="android:windowBackground">@drawable/qz_bg_leave</item>
     <item name="android:windowMinWidthMajor">75%</item>
     <item name="windowMinWidthMinor">75%</item>
-    </style>*/
+    </style>*//*
+
 
 
     fun handleBackpress(activity: AppCompatActivity){
@@ -84,7 +87,8 @@ object AppUtils {
 
 
 
-   /*
+   */
+/*
    TOOLBAR THEME
 
    <!--    back button color-->
@@ -97,10 +101,12 @@ object AppUtils {
     <item name="android:fontFamily">@font/base_font_semi_bold</item>
     </style>
 
-    */
+    *//*
 
 
 
+
+*/
 /*
   <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/trafficSignImageV"
@@ -119,16 +125,19 @@ object AppUtils {
     </style>
 
 *
-* */
+* *//*
 
 
 
 
-    /*
+
+    */
+/*
      * dataBinding hardcoded text
      * android:text="@{`Level ` + String.valueOf(level.ordinal()+1)}"
      *  android:text='@{@string/you_re_now_in_s + " "+ context.getString(viewModel.level.textResId) }'
-     */
+     *//*
+
 
 
 
@@ -148,7 +157,8 @@ object AppUtils {
 
 
 
-    /**
+    */
+/**
   fun upDownReverseAnimation() {
       val volumeUpAnimator = ObjectAnimator.ofFloat(player, "volume", 0.0f, 0.2f)
       volumeUpAnimator.duration = player!!.duration.toLong() / 2
@@ -169,7 +179,8 @@ object AppUtils {
 
         }
     }
-  */
+  *//*
+
 
 
     fun setAlphaAnimation(view: View) {
@@ -275,4 +286,4 @@ object AppUtils {
 
 
 
-}
+}*/

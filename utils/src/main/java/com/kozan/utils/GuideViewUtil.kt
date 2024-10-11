@@ -1,13 +1,6 @@
 package com.kozan.utils
 
-import android.content.Context
-import android.view.View
-import com.drivingexams.theorytest.fordrivers.R
-import com.koza.drivingsimulation.util.showcaseviewlib.GuideView
-import com.koza.drivingsimulation.util.showcaseviewlib.config.DismissType
-import com.koza.drivingsimulation.util.showcaseviewlib.config.Gravity
-
-object GuideViewUtil {
+/*object GuideViewUtil {
 
     var guideView: GuideView? = null
 
@@ -38,5 +31,5 @@ object GuideViewUtil {
     fun dismiss(){
         guideView?.dismiss()
     }
-}
+}*/
 

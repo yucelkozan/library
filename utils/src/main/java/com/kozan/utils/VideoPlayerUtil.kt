@@ -39,7 +39,7 @@ package com.kozan.utils
 
 
 
-class VideoPlayerUtil(private val context: Context, private val playerView: PlayerView) {
+/*class VideoPlayerUtil(private val context: Context, private val playerView: PlayerView) {
 
     private var player: ExoPlayer? = null
 
@@ -84,4 +84,4 @@ class VideoPlayerUtil(private val context: Context, private val playerView: Play
     fun isPlaying(): Boolean {
         return player?.isPlaying == true
     }
-}
+}*/
