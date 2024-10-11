@@ -69,7 +69,7 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.kozan.library'
+                groupId = 'com.github.yucelkozan.library' // github repo ile aynı olacak
                 artifactId = 'utils'
                 version = '1.0'
             }
