@@ -6,7 +6,8 @@ import androidx.navigation.fragment.findNavController
 import com.kozan.sample.R
 import com.kozan.sample.databinding.FragmentBlankBinding
 import com.kozan.utils.BaseFragment
-import com.kozan.utils.showToastMessage
+import com.kozan.utils.NavAnims
+import com.kozan.utils.showToast
 import com.kozan.utils.updateBottomPaddingByBottomSystemBar
 
 
@@ -45,8 +46,8 @@ class HomeFragment : BaseFragment<FragmentBlankBinding>(R.layout.fragment_blank)
             "SON SON SON SON SON SON SON SON SON",
             ))
         adapter.setOnItemClickListener { s, i ->
-        context.showToastMessage(s)
-            findNavController().navigate(R.id.detailFragment,null, NavigationAnimations.slideInFromTop())
+        context.showToast(s,true)
+            findNavController().navigate(R.id.detailFragment,null,NavAnims.fromRight())
         }
 
 

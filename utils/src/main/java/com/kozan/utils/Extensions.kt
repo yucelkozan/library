@@ -98,12 +98,13 @@ fun TextView.paintTextView(colorIntArray: IntArray) {
 
 
 fun NavController.navigateWithAnim(destinationId:Int, bundle : Bundle? = null){
-    this.navigate(destinationId,bundle,NavigationAnimations.slideInFromRight())
+    this.navigate(destinationId,bundle,NavAnims.fromRight())
 }
 
-fun Context?.showToastMessage(text: String){
-    Toast.makeText(this,text, Toast.LENGTH_LONG).show()
+fun Context?.showToast(text: String,isLong: Boolean = false){
+    Toast.makeText(this,text, if (isLong) Toast.LENGTH_LONG else Toast.LENGTH_SHORT).show()
 }
+
 
 fun View.hideKeyboard() {
     val imm =
