@@ -13,6 +13,8 @@
             <option value="$PROJECT_DIR$/abstraction" />
             <option value="$PROJECT_DIR$/alarm" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/sample" />
+            <option value="$PROJECT_DIR$/showcase" />
             <option value="$PROJECT_DIR$/translate" />
             <option value="$PROJECT_DIR$/utils" />
           </set>

@@ -5,23 +5,23 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 
 object PermissionManager {
-    private lateinit var checked: (Boolean) -> Unit
-    private var activityResultLauncher: ActivityResultLauncher<Array<String>>? = null
 
+    private lateinit var resultCallback: (Boolean) -> Unit
+    private lateinit var activityResultLauncher: ActivityResultLauncher<Array<String>>
+
+    // İzin isteklerinin başlatılması için Activity'ye kaydolma
     fun register(appCompatActivity: AppCompatActivity) {
-        activityResultLauncher =
-            appCompatActivity.registerForActivityResult(
-                ActivityResultContracts.RequestMultiplePermissions()
-            ) {
-                if (it.values.isNotEmpty()) { // boş gelince de izin vermiş gibi oluyor.
-                    checked.invoke(!it.values.contains(false))
-                }
-            }
+        activityResultLauncher = appCompatActivity.registerForActivityResult(
+            ActivityResultContracts.RequestMultiplePermissions()
+        ) { permissions ->
+            val allGranted = permissions.values.all { it }
+            resultCallback.invoke(allGranted)
+        }
     }
 
-
-    fun checkPermissions(permissions: Array<String>, checked: (Boolean) -> Unit) {
-        PermissionManager.checked = checked
-        activityResultLauncher?.let { it.launch(permissions) }
+    // İzinleri kontrol et ve sonucu geri bildir
+    fun checkPermissions(permissions: Array<String>, resultCallback: (Boolean) -> Unit) {
+        this.resultCallback = resultCallback
+        activityResultLauncher.launch(permissions)
     }
 }

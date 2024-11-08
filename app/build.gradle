@@ -43,6 +43,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.activity:activity:1.9.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.8.3'
 
     //Room
     def room_version = "2.5.2"
@@ -57,4 +59,5 @@ dependencies {
 
     implementation project(path: ':alarm')
     implementation project(path: ':translate')
+    implementation project(path: ':utils')
 }

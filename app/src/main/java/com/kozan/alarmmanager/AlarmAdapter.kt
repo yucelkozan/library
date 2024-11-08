@@ -13,7 +13,7 @@ class AlarmAdapter : RecyclerView.Adapter<AlarmAdapter.MyViewHolder>() {
     var itemList = mutableListOf<Alarm>()
 
 
-        val sdf = SimpleDateFormat("E,dd/MM/yyyy kk:mm:ss")
+    val sdf = SimpleDateFormat("E,dd/MM/yyyy kk:mm:ss")
 
 
     class MyViewHolder(val binding: ItemAlarmBinding): RecyclerView.ViewHolder(binding.root)

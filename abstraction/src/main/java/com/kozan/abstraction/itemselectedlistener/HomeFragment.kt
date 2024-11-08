@@ -32,7 +32,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.button.setOnClickListener {
-            listener.onItemSelected(it)
+           // listener.onItemSelected(it)
+            (requireActivity() as MainActivity).itemClicked.invoke(it)
 
         }
     }
