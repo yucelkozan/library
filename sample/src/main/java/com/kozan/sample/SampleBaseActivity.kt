@@ -5,6 +5,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import com.kozan.sample.databinding.ActivitySampleBinding
 import com.kozan.utils.BaseActivity
 import com.kozan.utils.updateMarginsBySystemBars
+import com.kozan.utils.updateTopPaddingBySystemBar
 
 
 class SampleBaseActivity : BaseActivity<ActivitySampleBinding>() {
@@ -20,5 +21,6 @@ class SampleBaseActivity : BaseActivity<ActivitySampleBinding>() {
         super.onCreate(savedInstanceState)
 
         binding.floatingActionButton.updateMarginsBySystemBars()
+        binding.materialToolbar.updateTopPaddingBySystemBar()
     }
 }

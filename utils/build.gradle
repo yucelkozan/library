@@ -72,7 +72,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.yucelkozan.library' // github repo ile aynı olacak
                 artifactId = 'utils'
-                version = '1.0'
+                version = '1.8'
             }
         }
     }

@@ -20,9 +20,7 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.setPadding
 import androidx.core.view.updateLayoutParams
 import androidx.core.view.updateMargins
 import androidx.navigation.NavController
@@ -128,10 +126,18 @@ fun Context.openBrowse(uriString: String) {
 /**
  * clipToPadding=false to ensure the list is visible while scrolling behind the navigation bar.
  * */
-fun View.updateBottomPaddingByBottomSystemBar() {
+fun View.updateBottomPaddingBySystemBar() {
     ViewCompat.setOnApplyWindowInsetsListener(this) { view, insets ->
         val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
         view.setPadding(view.paddingLeft,view.paddingTop, view.paddingRight, systemBars.bottom)
+        insets
+    }
+}
+
+fun View.updateTopPaddingBySystemBar() {
+    ViewCompat.setOnApplyWindowInsetsListener(this) { view, insets ->
+        val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+        view.setPadding(view.paddingLeft,systemBars.top, view.paddingRight, systemBars.top)
         insets
     }
 }

@@ -8,7 +8,7 @@ import com.kozan.sample.databinding.FragmentBlankBinding
 import com.kozan.utils.BaseFragment
 import com.kozan.utils.NavAnims
 import com.kozan.utils.showToast
-import com.kozan.utils.updateBottomPaddingByBottomSystemBar
+import com.kozan.utils.updateBottomPaddingBySystemBar
 
 
 class HomeFragment : BaseFragment<FragmentBlankBinding>(R.layout.fragment_blank) {
@@ -51,7 +51,7 @@ class HomeFragment : BaseFragment<FragmentBlankBinding>(R.layout.fragment_blank)
         }
 
 
-        binding.recyclerView.updateBottomPaddingByBottomSystemBar()
+        binding.recyclerView.updateBottomPaddingBySystemBar()
     }
 
 }
